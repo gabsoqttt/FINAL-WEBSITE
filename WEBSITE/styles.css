@@ -1,8 +1,63 @@
 /*  BASE STYLES*/
-
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f4ea;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
 
 /*  NAVBAR  */
+nav {
+  background-color: #0077b6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 60px;
+  color: white;
+  flex-wrap: wrap;
+}
 
+nav .logo {
+  font-family: 'Times New Roman', serif;
+  font-size: 22px;
+  letter-spacing: 1px;
+  font-style: italic;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+nav ul li a.active {
+  border-bottom: 3px solid #ff7043;
+  padding-bottom: 5px;
+}
+
+nav .book-btn {
+  background-color: #ff7043;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+nav .book-btn:hover {
+  background-color: #ff5722;
+}
 
 
 /* SEARCH BAR */
@@ -10,28 +65,28 @@
 
 
 
-/* ===== HEADER ===== */
+/* HEADER  */
 
 
-/* ===== TABS ===== */
-
-
-
-
-/* ===== SECTIONS ===== */
-
-
-/* ===== CARDS ===== */
+/*  TABS */
 
 
 
-/* ===== CONTACT PAGE ===== */
+
+/*  SECTIONS  */
 
 
-/* ===== FOOTER ===== */
+/*  CARDS  */
 
 
-/* ===== RESPONSIVENESS ===== */
+
+/*  CONTACT PAGE  */
+
+
+/*  FOOTER  */
+
+
+/*  RESPONSIVENESS  */
 
 /* Tablet View */
 
@@ -42,5 +97,5 @@
 /* Extra Small Screens */
 
 
-/* ===== PRINT STYLES  ===== */
+/*  PRINT STYLES   */
 
