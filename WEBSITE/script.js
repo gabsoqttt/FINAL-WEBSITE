@@ -30,9 +30,41 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 //  BOOKING FORM VALIDATION 
+document.addEventListener("DOMContentLoaded", () => {
+  const bookingForm = document.querySelector(".booking-form");
+  if (bookingForm) {
+    bookingForm.addEventListener("submit", e => {
+      e.preventDefault();
+
+      const inputs = bookingForm.querySelectorAll("input");
+      let isValid = true;
+
+      inputs.forEach(input => {
+        if (!input.value.trim()) {
+          isValid = false;
+          input.style.border = "2px solid red";
+        } else {
+          input.style.border = "none";
+        }
+      });
+
+      if (!isValid) {
+        alert("⚠️ Please fill in all fields before submitting your booking.");
+        return;
+      }
+
+      alert("✅ Thank you! Your booking has been submitted successfully.");
+      bookingForm.reset();
+    });
+  }
+});
 
 
 //  RESPONSIVE MENU 
+const nav = document.querySelector("nav ul");
+const menuToggle = document.createElement("div");
+menuToggle.classList.add("menu-toggle");
+menuToggle.innerHTML = "&#9776;"; 
 
 
 // Add menu toggle button
