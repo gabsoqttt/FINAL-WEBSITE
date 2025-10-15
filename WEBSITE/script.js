@@ -1,0 +1,17 @@
+//  ACTIVE NAVIGATION HIGHLIGHT 
+
+
+//  BOOK NOW BUTTON REDIRECT
+
+
+//  BOOKING FORM VALIDATION 
+
+
+//  RESPONSIVE MENU 
+
+
+// Add menu toggle button
+
+
+//  PRINT FUNCTION  
+
