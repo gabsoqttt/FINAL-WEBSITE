@@ -174,10 +174,102 @@ nav .book-btn:hover {
 }
 
 /*  CONTACT PAGE  */
+.contact-section {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #fdf7ed;
+}
 
+.contact-section h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.booking-form {
+  max-width: 800px;
+  margin: 0 auto 50px auto;
+  background-color: #e6e6e6;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.booking-form input[type="text"],
+.booking-form input[type="date"],
+.booking-form input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+}
+
+.booking-form button {
+  background-color: #ff5722;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.booking-form button:hover {
+  background-color: #e64a19;
+}
+
+.contact-links {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.contact-links a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: #ff5722;
+  font-size: 16px;
+}
+
+.contact-links img {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+
+.contact-links a:hover {
+  text-decoration: underline;
+}
 
 /*  FOOTER  */
+footer {
+  background-color: #0077b6;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 10px;
+  font-size: 14px;
+}
 
+footer a {
+  color: #ff7043;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
 
 /*  RESPONSIVENESS  */
 
