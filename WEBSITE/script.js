@@ -68,7 +68,30 @@ menuToggle.innerHTML = "&#9776;";
 
 
 // Add menu toggle button
+if (document.querySelector("nav")) {
+  document.querySelector("nav").insertBefore(menuToggle, nav);
 
+  menuToggle.addEventListener("click", () => {
+    nav.classList.toggle("show");
+  });
+}
 
 //  PRINT FUNCTION  
+document.addEventListener("DOMContentLoaded", () => {
+  if (window.location.pathname.includes("contact.html")) {
+    const printButton = document.createElement("button");
+    printButton.textContent = "🖨️ Print This Page";
+    printButton.classList.add("print-btn");
 
+    const footer = document.querySelector("footer");
+    if (footer) {
+      footer.insertAdjacentElement("afterend", printButton);
+    } else {
+      document.body.appendChild(printButton);
+    }
+
+    printButton.addEventListener("click", () => {
+      window.print();
+    });
+  }
+});
