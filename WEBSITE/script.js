@@ -64,7 +64,6 @@ document.addEventListener("DOMContentLoaded", () => {
 const nav = document.querySelector("nav ul");
 const menuToggle = document.createElement("div");
 menuToggle.classList.add("menu-toggle");
-menuToggle.innerHTML = "&#9776;"; 
 
 
 // Add menu toggle button
@@ -90,6 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
       document.body.appendChild(printButton);
     }
 
+   
     printButton.addEventListener("click", () => {
       window.print();
     });
