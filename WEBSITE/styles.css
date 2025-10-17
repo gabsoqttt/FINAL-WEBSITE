@@ -432,3 +432,77 @@ footer a:hover {
   }
 }
 
+/* RESPONSIVE MENU  */
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* PRINT BUTTON (BOTTOM OF PAGE) */
+.print-btn {
+  display: block;
+  margin: 40px auto;
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.print-btn:hover {
+  background-color: #005f8a;
+}
+
+
+@media print {
+  .print-btn {
+    display: none !important;
+  }
+}
+
+/* Simple Fade & Slide Animation */
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply to main sections */
+.header, 
+.cards-container, 
+.booking-form, 
+.contact-section {
+  animation: fadeSlideUp 0.8s ease-in-out;
+}
